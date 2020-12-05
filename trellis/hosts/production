@@ -1,0 +1,5 @@
+[production]
+production_host ansible_host=comarqbim.com
+
+[web]
+production_host ansible_host=comarqbim.com

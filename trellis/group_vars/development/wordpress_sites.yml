@@ -1,0 +1,22 @@
+# Documentation: https://roots.io/trellis/docs/local-development-setup/
+# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
+# Define accompanying passwords/secrets in group_vars/development/vault.yml
+
+wordpress_sites:
+  comarqbim.com:
+    site_hosts:
+      - canonical: comarqbim.test
+        redirects:
+          - www.comarqbim.test
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    site_title: ComarqBIM
+    admin_user: master
+    admin_email: master@comarqbim.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      provider: self-signed
+      hsts_max_age: 0  # disable HSTS for reaching MailHog site
+    cache:
+      enabled: false
