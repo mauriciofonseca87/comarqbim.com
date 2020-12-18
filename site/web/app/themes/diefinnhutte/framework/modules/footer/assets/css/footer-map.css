@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Footer styles - begin
+   ========================================================================== */
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+.qodef-page-footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.no-touch body:not(.error404) .qodef-page-footer.qodef-footer-uncover {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -o-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+
+.qodef-right-side-menu-opened .qodef-page-footer.qodef-footer-uncover {
+  left: -270px;
+}
+
+.qodef-page-footer .qodef-text-logo-footer .qodef-text-logo-left {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.35em;
+}
+
+.qodef-page-footer .qodef-text-logo-footer .qodef-text-logo-right {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  padding-left: 24px;
+  margin-left: 6px;
+  padding-top: 2px;
+}
+
+.qodef-page-footer .qodef-text-logo-footer .qodef-text-logo-right:before {
+  content: '/';
+  position: absolute;
+  font-size: 22px;
+  left: 0;
+  top: -2px;
+}
+
+.qodef-page-footer .qodef-footer-top-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #f6f6f6;
+  border-top: 0 solid #e1e1e1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-alignment-center {
+  text-align: center;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-alignment-left {
+  text-align: left;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-alignment-right {
+  text-align: right;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner.qodef-grid {
+  padding: 100px 0 60px;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner.qodef-full-width {
+  padding: 100px 200px 63px;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  border-top: 0 solid #e1e1e1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-page-footer .qodef-footer-bottom-holder .qodef-grid-col-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-page-footer .qodef-footer-bottom-holder .qodef-grid-col-6 {
+    width: 100%;
+    float: none;
+    text-align: center !important;
+  }
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .widget {
+  margin: 0;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .textwidget {
+  font-size: 14px;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner .qodef-grid-col-6:nth-of-type(2) {
+  text-align: right;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner.qodef-grid {
+  padding: 25px 0 33px;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner.qodef-full-width {
+  padding: 19px 40px;
+}
+
+.qodef-footer-light .qodef-page-footer {
+  color: #bcbcbc;
+}
+
+.qodef-footer-light .qodef-page-footer a {
+  color: #bcbcbc !important;
+}
+
+.qodef-footer-light .qodef-page-footer .qodef-widget-title,
+.qodef-footer-light .qodef-page-footer .qodef-post-info-date a,
+.qodef-footer-light .qodef-page-footer .qodef-btn,
+.qodef-footer-light .qodef-page-footer h1, .qodef-footer-light .qodef-page-footer h2, .qodef-footer-light .qodef-page-footer h3, .qodef-footer-light .qodef-page-footer h4, .qodef-footer-light .qodef-page-footer h5, .qodef-footer-light .qodef-page-footer h6 {
+  color: #fff !important;
+}
+
+.qodef-footer-light .qodef-page-footer .qodef-widget-title:hover,
+.qodef-footer-light .qodef-page-footer .qodef-post-info-date a:hover,
+.qodef-footer-light .qodef-page-footer .qodef-btn:hover,
+.qodef-footer-light .qodef-page-footer h1:hover, .qodef-footer-light .qodef-page-footer h2:hover, .qodef-footer-light .qodef-page-footer h3:hover, .qodef-footer-light .qodef-page-footer h4:hover, .qodef-footer-light .qodef-page-footer h5:hover, .qodef-footer-light .qodef-page-footer h6:hover {
+  color: #fff !important;
+}
+
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map.css.map */
