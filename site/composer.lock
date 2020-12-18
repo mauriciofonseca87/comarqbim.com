@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab4d0dd794fd75d957076ed38efdbd40",
+    "content-hash": "8c375473d4451b4ba326753a2e9ec99b",
     "packages": [
         {
             "name": "composer/installers",
@@ -1061,6 +1061,42 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/facebook-for-woocommerce",
+            "version": "2.2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/facebook-for-woocommerce/",
+                "reference": "tags/2.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/facebook-for-woocommerce.2.2.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/facebook-for-woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/kliken-marketing-for-google",
+            "version": "1.0.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/kliken-marketing-for-google/",
+                "reference": "tags/1.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/kliken-marketing-for-google.1.0.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/kliken-marketing-for-google/"
         },
         {
             "name": "wpackagist-plugin/safe-svg",
