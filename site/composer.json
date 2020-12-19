@@ -44,7 +44,8 @@
     "wpackagist-plugin/contact-form-7": "5.3.2",
     "wpackagist-plugin/woocommerce": "4.8.0",
     "wpackagist-plugin/facebook-for-woocommerce": "2.2.0",
-    "wpackagist-plugin/kliken-marketing-for-google": "1.0.6"
+    "wpackagist-plugin/kliken-marketing-for-google": "1.0.6",
+    "wpackagist-theme/twentytwentyone": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.8",
