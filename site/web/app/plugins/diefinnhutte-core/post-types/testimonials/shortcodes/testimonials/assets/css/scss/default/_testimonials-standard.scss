@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.qodef-testimonials-holder {
+    
+    &.qodef-testimonials-standard {
+        text-align: center;
+        padding: 149px 17% 154px;
+        overflow: hidden;
+
+        .qodef-testimonials-image-holder {
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255,255,255,.8);
+            }
+
+            .qodef-testimonial-image:first-child {
+                opacity: 1;
+            }
+
+            .qodef-testimonial-image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                opacity: 0;
+                transition: opacity .2s ease-in-out;
+
+                &.qodef-active-testimonial-image {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .qodef-testimonial-title {
+            margin: 0;
+        }
+
+        .qodef-testimonial-author {
+            margin: 25px 0 0;
+        }
+
+        .qodef-testimonial-text {
+            margin: 20px 0 0;
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 27px;
+            color: $default-heading-color;
+        }
+
+        .qodef-owl-slider {
+
+            .owl-nav {
+                .owl-prev {
+                    left: -38px;
+                }
+                .owl-next {
+                    right: -38px;
+                }
+            }
+        }
+
+        /* Light/Dark styles */
+        &.qodef-testimonials-light {
+
+            .qodef-testimonials-image-holder {
+                &:after {
+                    background-color: rgba(17, 17, 17, .9);
+                }
+            }
+            
+            .qodef-testimonial-title,
+            .qodef-testimonial-author {
+                color: #fff;
+            }
+            .qodef-testimonial-text {
+                color: #acacac;
+            }
+
+            .owl-nav {
+                .owl-next,
+                .owl-prev {
+                    color: #fff;
+                }
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid rgba(#fff, .5);
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

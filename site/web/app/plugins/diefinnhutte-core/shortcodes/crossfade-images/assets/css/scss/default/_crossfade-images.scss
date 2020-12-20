@@ -1,0 +1,81 @@
+/* ==========================================================================
+Crossfade Images shortcode styles - start
+========================================================================== */
+.qodef-crossfade-images {
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+
+	&.featured-item {
+		&:after {
+			content: "\e031";
+			position: absolute;
+			right: -25px;
+			top: -25px;
+			color: #fff;
+			border-radius: 100%;
+			background-color: #000;
+			font-size: 12px;
+			height: 50px;
+			width: 50px;
+			line-height: 50px;
+			text-align: center;
+			z-index: 50;
+			font-family: "eleganticons";
+		}
+	}
+
+	.qodef-cfi-link {
+		@include qodefAbsoluteHolderLayout();
+		z-index: 100;
+	}
+
+	.qodef-cfi-img-holder {
+		box-shadow: 5px 8px 13.92px 2.08px rgba(0, 0, 0, 1);
+		transition: all .3s;
+
+		.qodef-cfi-img-holder-inner {
+			position: relative;
+			overflow: hidden;
+		}
+		
+		img {
+			vertical-align: middle;
+			position: relative;
+			z-index: 20;
+			clip-path: inset(-1px -1px -1px 0);
+			-webkit-clip-path: inset(-1px -1px -1px 0);
+			transition: 1s cubic-bezier(.645,.045,.355,1),transform 1s;
+			will-change: clip-path,transform;
+		}
+
+		.qodef-cfi-image-hover{
+			@include qodefAbsoluteHolderLayout();
+			z-index: 10;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	}
+
+
+	.qodef-cfi-title-holder {
+		text-align: center;
+
+		.qodef-cfi-title {
+			margin: 28px 0;
+		}
+	}
+
+	&:hover {
+		.qodef-cfi-img-holder {
+			img {
+				clip-path: inset(100% -1px -1px 0);
+				-webkit-clip-path: inset(100% -1px -1px 0);
+			}
+		}
+	}
+}
+/* ==========================================================================
+Crossfade Images shortcode styles - end
+========================================================================== */

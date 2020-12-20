@@ -1,0 +1,179 @@
+/* ==========================================================================
+   Portfolio Item Layout - vertical Item Showcase style - begin
+   ========================================================================== */
+.qodef-portfolio-list-holder {
+    &.qodef-pl-vertical-showcase {
+        width: 100%;
+        padding: 0 44px;
+        margin: 0;
+        box-sizing: border-box;
+
+        .qodef-vertical-item-showcase-list-wrapper {
+            position: relative;
+            margin: 0;
+
+            .qodef-pl-showcase-left {
+                position: fixed;
+                display: table;
+                top: 0;
+                left: 0;
+                width: 55%;
+                height: 100vh;
+                text-align: left;
+                z-index: 2000;
+                background-size: cover;
+
+                .qodef-pl-showcase-left-inner {
+                    display: table-cell;
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: middle;
+                    text-align: center;
+                    position: relative;
+                }
+
+                .qodef-pli-author {
+                    padding-top: 55px;
+                    color: $default-heading-color;
+                }
+
+                article {
+                    position: absolute;
+                    opacity: 0;
+                    width: 100%;
+                    top: 50%;
+                    text-align: left;
+                    padding: 0 0 0 40%;
+                    transition: all .3s;
+                    transform: translateY(-50%);
+                    pointer-events: auto!important;
+                    box-sizing: border-box;
+                    backface-visibility: hidden;
+
+                    .qodef-pli-text-holder {
+                        margin: 0;
+                    }
+
+                    .qodef-pli-text-wrapper {
+                        display: block;
+
+                        .qodef-pli-text {
+                            position: relative;
+                            display: inline-block;
+                            max-width: 70%;
+                            height: auto;
+                            z-index: 200;
+
+                            .qodef-pli-title {
+
+                                a {
+                                    position: relative;
+                                    transition: all .2s ease;
+                                    @include qodefUnderline;
+
+                                    &:hover {
+                                        color: inherit;
+                                    }
+                                }
+                            }
+
+                            .qodef-pli-category-holder {
+                                line-height: 1em;
+                                margin: 0 0 26px;
+                                font-family: $default-text-font;
+                                font-weight: 600;
+                                font-size: 13px;
+                                color: $default-heading-color;
+                                letter-spacing: .15em;
+                                text-transform: uppercase;
+
+                                a {
+                                    font-weight: 600;
+                                    vertical-align: top;
+
+                                    &:hover {
+                                        color: inherit;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .qodef-pl-item-inner {
+                        @include qodefTableLayout();
+                    }
+
+                    .qodef-pli-image {
+                        display: none;
+                        transition: opacity .5s ease-in-out;
+                    }
+
+                    &:first-child {
+                        opacity: 1;
+                        z-index: 2001;
+                    }
+                }
+            }
+        }
+
+        .qodef-pl-filter-holder {
+            position: fixed;
+            bottom: 0;
+            text-align: left;
+            max-width: 20%;
+            z-index: 400;
+        }
+    }
+}
+
+.qodef-pl-showcase-right {
+    position: relative;
+    width: 45%;
+    margin-left: 55%;
+
+    .qodef-pli-image {
+        position: relative;
+        width: 100%;
+        margin-bottom: 175px;
+        transition: all .5s;
+
+        img {
+            clip-path: inset(0 100% 0 0);
+            -webkit-clip-path: inset(0 100% 0 0);
+            transition: 1s cubic-bezier(.645,.045,.355,1),transform 1s;
+            will-change: clip-path,transform;
+        }
+
+        &:first-child {
+            opacity: 1;
+        }
+
+        .qodef-stamp-holder {
+            position: absolute;
+            left: -90px;
+            top: -40px;
+        }
+
+        .qodef-stamp-text.qodef-stamp-visible span {
+            opacity: 0;
+        }
+
+        &.qodef-appeared {
+            img {
+                clip-path: inset(0 0 0 0) !important;
+                -webkit-clip-path: inset(0 0 0 0) !important;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 100vh;
+    }
+}
+
+
+/* ==========================================================================
+   Portfolio Item Layout - vertical Item Showcase style - end
+   ========================================================================== */

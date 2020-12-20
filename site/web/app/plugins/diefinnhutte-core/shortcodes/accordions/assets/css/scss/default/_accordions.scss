@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+
+.qodef-accordion-holder {
+    @include qodefRelativeHolderLayout();
+
+    .qodef-accordion-title {
+        position: relative;
+        cursor: pointer;
+        margin: 0;
+        box-sizing: border-box;
+        transform: translateZ(0px);
+        transition: color .2s ease-out, background-color .2s ease-out;
+	
+	    .qodef-tab-title {
+		    display: block;
+		    line-height: inherit;
+	    }
+
+        .qodef-accordion-mark {
+            position: absolute;
+            top: 50%;
+	        left: 0;
+            width: 20px;
+	        height: 18px;
+	        margin: -1px 0 0;
+	        font-size: 18px;
+	        line-height: 18px;
+            text-align: center;
+            transform: translateY(-50%);
+	
+	        span {
+		        position: absolute;
+		        display: block;
+		        width: 100%;
+		        height: 100%;
+		        font-size: inherit;
+		        line-height: inherit;
+		        transition: opacity .2s ease-out;
+		
+		        &:before {
+			        display: block;
+			        line-height: inherit;
+		        }
+		        
+		        &.qodef_icon_minus {
+			        opacity: 0;
+		        }
+		        
+		        &.qodef_icon_plus {
+			        opacity: 1;
+		        }
+	        }
+        }
+	    
+	    &.ui-state-active,
+	    &.ui-state-hover {
+		
+		    .qodef-accordion-mark {
+			    
+			    span {
+				    
+				    &.qodef_icon_minus {
+					    opacity: 1;
+				    }
+				    
+				    &.qodef_icon_plus {
+					    opacity: 0;
+				    }
+			    }
+		    }
+	    }
+    }
+
+    .qodef-accordion-content {
+        margin: 0;
+	    
+	    p {
+		    margin: 0;
+	    }
+    }
+	
+	&.qodef-ac-boxed {
+		border: 1px solid $default-border-color;
+		
+		&.qodef-white-skin {
+			border-color: #424242;
+			.qodef-accordion-title {
+				color: #fff;
+				border-color: #424242;
+			}
+			.qodef-accordion-content {
+				border-color: #424242;
+			}
+		}
+		
+		.qodef-accordion-title {
+			padding: 24px 20px 23px 53px;
+			border-bottom: 1px solid $default-border-color;
+
+			&:not(.ui-state-active):last-of-type {
+				border: none;
+			}
+
+			.qodef-accordion-mark {
+				left: 26px;
+			}
+			
+			&.ui-state-active,
+			&.ui-state-hover {
+			}
+		}
+		
+		.qodef-accordion-content {
+			padding: 35px 32px 34px;
+            background-color: transparent;
+			border-bottom: 1px solid $default-border-color;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	
+	&.qodef-ac-simple {
+		border-bottom: 1px solid $default-border-color;
+		
+		.qodef-accordion-title {
+			padding: 17px 0 17px 30px;
+			border-top: 1px solid $default-border-color;
+		}
+		
+		.qodef-accordion-content {
+			border-top: 1px solid transparent;
+			
+			&.ui-accordion-content-active {
+				border-color: $default-border-color;
+			}
+		}
+		
+		.qodef-accordion-content {
+			padding: 21px 0 16px;
+		}
+	}
+}
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */

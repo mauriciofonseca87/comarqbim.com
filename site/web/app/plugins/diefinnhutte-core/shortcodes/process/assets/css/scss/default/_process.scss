@@ -1,0 +1,243 @@
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+
+.qodef-process-holder {
+	@include qodefRelativeHolderLayout();
+	
+	$columns: ('two', 'three', 'four');
+	@for $i from 0 to length($columns) {
+		&.qodef-#{nth($columns, $i+1)}-columns {
+			$column_width: 100%/($i+2);
+			
+			.qodef-mark-horizontal-holder {
+				
+				.qodef-process-mark {
+					width: $column_width;
+				}
+			}
+			
+			.qodef-mark-vertical-holder {
+				
+				.qodef-process-mark {
+					height: $column_width;
+				}
+			}
+			
+			.qodef-process-item {
+				width: $column_width;
+			}
+		}
+	}
+	
+	&.qodef-process-appeared {
+		
+		.qodef-process-circle {
+			opacity: 1;
+			transform: scale(1);
+		}
+		
+		.qodef-mark-horizontal-holder {
+			
+			.qodef-process-line {
+				width: 35%;
+
+				&:before,
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+		
+		.qodef-mark-vertical-holder {
+			
+			.qodef-process-line {
+				height: 58%;
+			}
+
+			.qodef-process-circle {
+				background-color: #f8f8f8;
+			}
+		}
+		
+		.qodef-process-item {
+			opacity: 1;
+		}
+	}
+	
+	.qodef-mark-horizontal-holder {
+		@include qodefRelativeHolderLayout();
+		clear: both;
+		
+		.qodef-process-mark {
+			float: left;
+		}
+		
+		.qodef-process-line {
+			bottom: -120%;
+			left: 82%;
+			width: 0;
+			height: 2px;
+			transition: width .4s ease .1s;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				width: 15px;
+				height: 2px;
+				background-color: currentColor;
+				right: -2px;
+				transition: all .2s ease-in .3s;
+				opacity: 0;
+			}
+
+			&:before{
+				transform: rotate(45deg);
+				top: -5px;
+			}
+
+			&:after {
+				transform: rotate(135deg);
+				bottom: -5px;
+			}
+		}
+	}
+	
+	.qodef-mark-vertical-holder {
+		position: absolute;
+		top: 26px;
+		left: 0;
+		display: none;
+		width: 46px;
+		height: 100%;
+		
+		.qodef-process-line {
+			top: 53px;
+			left: 50%;
+			width: 2px;
+			height: 0;
+			transition: height .4s ease .1s;
+			color: #fff;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				background-color: currentColor;
+				width: 15px;
+				height: 2px;
+				bottom: 5px;
+			}
+
+			&:before {
+				transform: rotate(45deg);
+				left: -12px;
+			}
+
+			&:after {
+				transform: rotate(135deg);
+				right: -12px;
+			}
+		}
+	}
+	
+	.qodef-process-mark {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		text-align: right;
+		box-sizing: border-box;
+		padding: 0 4.7%;
+		
+		&:last-child {
+			
+			.qodef-process-line {
+				display: none;
+			}
+		}
+		
+		@for $i from 2 to 5 {
+			
+			&:nth-child(#{$i}) {
+				
+				.qodef-process-circle {
+					transition-delay: #{.5 * ($i - 1)}s;
+				}
+				
+				.qodef-process-line,
+				.qodef-process-line:before,
+				.qodef-process-line:after {
+					transition-delay: #{.6 * ($i - 1)}s;
+				}
+			}
+		}
+	}
+	
+	.qodef-process-circle {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 45px;
+		height: 45px;
+		font-size: 13px;
+		line-height: 45px;
+		font-weight: 800;
+		color: $default-heading-color;
+		background-color: #fff;
+		border-radius: 100%;
+		opacity: 0;
+		transition: opacity .2s ease, transform .3s ease;
+		transform: scale(.6);
+		text-align: center;
+	}
+	
+	.qodef-process-line {
+		position: absolute;
+		background-color: currentColor;
+	}
+	
+	.qodef-process-inner {
+		margin: 0 -15px;
+	}
+	
+	.qodef-process-item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		padding: 0 15px;
+		opacity: 0;
+		text-align: center;
+		box-sizing: border-box;
+		transition: opacity .2s ease;
+		
+		@for $i from 2 to 5 {
+			
+			&:nth-child(#{$i}) {
+				transition-delay: #{.5 * ($i - 1)}s;
+			}
+		}
+	}
+	
+	.qodef-pi-content {
+		@include qodefRelativeHolderLayout();
+		margin: 10px 0 10px;
+	}
+	
+	.qodef-pi-title {
+		margin: 36px 0 0;
+		font-weight: 600;
+		color: #fff;
+	}
+	
+	.qodef-pi-text {
+		margin: 10px 0 0;
+		box-sizing: border-box;
+		padding: 0 12%;
+		color: #fff;
+	}
+}
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */

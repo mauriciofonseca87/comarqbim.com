@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Stamp shortcode style - begin
+   ========================================================================== */
+
+.qodef-stamp-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    font-family: $default-heading-font;
+    font-weight: 300;
+    color: $default-text-color;
+    font-size: 13px;
+    letter-spacing: .05em;
+
+    &.qodef-init {
+
+        .qodef-s-text {
+
+            > * {
+                opacity: 1;
+            }
+        }
+    }
+
+    &.qodef-abs {
+        position: absolute;
+    }
+
+    $stages: ('1440', '1280', '1024', '768', '680', '480');
+    @for $i from 0 to length($stages) {
+        &.qodef-hide-on-#{nth($stages,$i+1)} {
+
+            @media only screen and (max-width: #{nth($stages,$i+1)}px) {
+                display: none;
+            }
+        }
+    }
+
+    .qodef-s-text {
+        position: relative;
+        display: block;
+        height: 100%;
+        font-weight: 500;
+
+        > * {
+            position: absolute;
+            top: 0;
+            left: calc(50% - 4px);
+            width: 8px;
+            height: 50%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity .1s;
+            transform-origin: bottom center;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+/* ==========================================================================
+   Stamp shortcode style - end
+   ========================================================================== */

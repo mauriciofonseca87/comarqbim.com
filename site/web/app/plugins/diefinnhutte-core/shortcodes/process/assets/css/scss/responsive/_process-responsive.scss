@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+.qodef-process-holder {
+	
+	@include laptop-landscape-mac {
+		
+		&.qodef-responsive-1366 {
+			
+			.qodef-mark-horizontal-holder {
+				display: none;
+			}
+			
+			.qodef-mark-vertical-holder {
+				display: block;
+			}
+			
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				padding: 0 0 0 76px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+			}
+		}
+	}
+	
+	@include ipad-landscape {
+		
+		&.qodef-responsive-1024 {
+
+			.qodef-pi-content {
+				margin-bottom: 40px;
+			}
+
+			.qodef-pi-text {
+				padding-left: 0;
+			}
+			
+			.qodef-mark-horizontal-holder {
+				display: none;
+			}
+			
+			.qodef-mark-vertical-holder {
+				display: block;
+			}
+			
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				padding: 0 0 0 76px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+				
+				img {
+					display: none;
+				}
+
+				.qodef-pi-title {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	
+	@include ipad-portrait {
+
+		&.qodef-responsive-680 {
+
+			.qodef-mark-horizontal-holder {
+				display: none;
+			}
+
+			.qodef-mark-vertical-holder {
+				display: block;
+			}
+
+			.qodef-pi-text {
+				padding: 0;
+			}
+
+			.qodef-process-inner {
+				@include qodefRelativeHolderLayout();
+				padding: 0 0 0 76px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			.qodef-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+			}
+		}
+	}
+	
+	@include phone-landscape {
+
+		.qodef-mark-horizontal-holder {
+			display: none;
+		}
+
+		.qodef-mark-vertical-holder {
+			display: block;
+		}
+
+		.qodef-pi-text {
+			padding: 0;
+		}
+
+		.qodef-process-inner {
+			@include qodefRelativeHolderLayout();
+			padding: 0 0 0 76px;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.qodef-process-item {
+			width: 100% !important;
+			float: none;
+			padding: 0;
+			text-align: inherit;
+		}
+	}
+}
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */

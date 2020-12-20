@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+    
+    &.qodef-ps-masonry-layout {
+        
+        > .qodef-grid-row {
+            margin-top: 86px;
+        }
+
+        .qodef-ps-info-holder {
+            box-sizing: border-box;
+            padding-left: 22%;
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - end
+   ========================================================================== */

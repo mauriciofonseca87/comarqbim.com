@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Portfolio Slider shortcode style - begin
+   ========================================================================== */
+
+.qodef-portfolio-slider-holder {
+    @include qodefRelativeHolderLayout();
+	overflow: hidden;
+
+	.qodef-pl-inner {
+		margin: 0 !important;
+
+		.qodef-pl-item-inner,
+		.qodef-pl-item {
+			height: 100%;
+		}
+	}
+
+	.qodef-portfolio-list-holder {
+
+        &.qodef-small-space {
+            &.qodef-disable-bottom-space {
+                margin-bottom: 0;
+            }
+        }
+
+        .qodef-ps-fh-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .owl-nav {
+			@include phone-landscape {
+				display: none;
+			}
+			
+            .owl-next,
+            .owl-prev {
+                width: 43px;
+                height: 76px;
+                background-color: #171717;
+                color: #fff;
+            }
+        }
+
+		&.qodef-nav-light-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+                    background-color: #fff;
+                    color: #171717;
+					
+					&:hover {
+						color: $first-main-color;
+					}
+				}
+			}
+		}
+
+		&.qodef-nav-dark-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+                    background-color: #171717;
+                    color: #fff;
+					
+					&:hover {
+						color: $header-dark-hover-color;
+					}
+				}
+			}
+		}
+
+		&.qodef-pag-light-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					span {
+						border: 2px solid rgba(#fff, .5);
+					}
+
+					&.active,
+					&:hover {
+
+						span {
+							background-color: #fff;
+							border-color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		&.qodef-pag-dark-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					span {
+						border: 2px solid rgba(#000, .5);
+					}
+
+					&.active,
+					&:hover {
+
+						span {
+							background-color: #000;
+							border-color: #000;
+						}
+					}
+				}
+			}
+		}
+
+		&.qodef-pag-on-slider {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+					transform: translateY(-50%);
+				}
+			}
+
+			.owl-dots {
+				position: absolute;
+				left: 0;
+				bottom: 20px;
+				width: 100%;
+				margin: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Slider shortcode style - end
+   ========================================================================== */

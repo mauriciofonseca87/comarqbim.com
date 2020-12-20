@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - begin
+   ========================================================================== */
+
+.qodef-portfolio-list-holder {
+
+    &.qodef-pl-gallery-slide-from-image-right {
+
+        &.qodef-pl-has-shadow {
+
+            .qodef-pl-item-inner {
+                box-shadow: $default-box-shadow;
+            }
+        }
+
+        article {
+
+            &:hover {
+
+                .qodef-pli-text-holder,
+                .qodef-pli-text-wrapper {
+                    transform: translateX(0);
+                }
+
+                .qodef-pli-image {
+                    img {
+                        transform: scale(1.06) translateX(-3%);
+                        transition: transform 1s cubic-bezier(.33,.02,0,.93);
+                    }
+                }
+            }
+
+            .qodef-pl-item-inner {
+                overflow: hidden;
+            }
+
+            .qodef-pli-image {
+                overflow: hidden;
+
+                img {
+                    display: block;
+                    transform: scale(1.06);
+                    transition: transform 1s cubic-bezier(.33,.02,0,.93);
+                }
+            }
+        }
+
+        .qodef-pli-text-holder {
+            position: absolute;
+            display: block;
+            width: auto;
+            height: auto;
+            top: 20px;
+            right: -1px;
+            padding: 19px 32px 8px 23px;
+            background-color: #171717;
+            overflow: hidden;
+            box-sizing: border-box;
+            transform: translateX(100%);
+            transition: transform .4s ease-in-out;
+            z-index: 30;
+
+            .qodef-pli-text-wrapper {
+                display: inline-block;
+                transform: translateX(200%);
+                transition: transform .4s ease-in-out;
+                text-align: left;
+            }
+
+            .qodef-pli-text {
+
+                .qodef-pli-category-holder {
+                    margin-top: 1px;
+
+                    a {
+                        color: #bcbcbc;
+                    }
+                }
+
+                .qodef-pli-title,
+                .qodef-pli-excerpt,
+                .qodef-btn {
+                    color: #fff;
+                }
+                .qodef-btn {
+                    &:hover {
+                        color: #fff!important;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - end
+   ========================================================================== */

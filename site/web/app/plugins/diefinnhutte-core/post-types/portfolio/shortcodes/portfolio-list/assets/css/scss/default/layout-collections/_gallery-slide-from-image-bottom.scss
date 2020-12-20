@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - begin
+   ========================================================================== */
+
+.qodef-portfolio-list-holder {
+	
+	&.qodef-pl-gallery-slide-from-image-bottom {
+		
+		&.qodef-pl-has-shadow {
+			
+			.qodef-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+
+                .qodef-pli-text-holder {
+                    transform: translateY(0);
+                    transition: transform .45s cubic-bezier(0.6, 0.09, 0.29, 0.89);
+                }
+
+				.qodef-pli-text-wrapper {
+                    opacity: 1;
+				}
+			}
+			
+			.qodef-pl-item-inner {
+				overflow: hidden;
+			}
+		}
+		
+		.qodef-pli-text-holder {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: auto;
+			bottom: 0;
+			left: 0;
+			padding: 30px 35px 29px;
+			background-color: #171717;
+			overflow: hidden;
+			box-sizing: border-box;
+			transform: translateY(100%);
+			transition: .45s cubic-bezier(0.6, 0.09, 0.29, 0.89);
+			z-index: 30;
+
+
+            .qodef-pli-text {
+
+                .qodef-pli-category-holder {
+                    margin-top: 1px;
+
+                    a {
+                        color: #bcbcbc;
+
+						&:before {
+							content: '';
+							position: absolute;
+							bottom: 4px;
+							left: 0;
+							height: 1px;
+							background-color: currentColor;
+							width: 100%;
+							transform: scaleX(0);
+							-webkit-transform-origin: 100% 50%;
+							-moz-transform-origin: 100% 50%;
+							transform-origin: 100% 50%;
+							transition: transform .4s cubic-bezier(.28,.38,0,.81);
+						}
+
+						&:hover {
+							&:before {
+								transform: scaleX(1);
+								-webkit-transform-origin: 0% 50%;
+								-moz-transform-origin: 0% 50%;
+								transform-origin: 0% 50%;
+							}
+						}
+                    }
+                }
+
+                .qodef-pli-title,
+                .qodef-pli-excerpt,
+                .qodef-btn {
+                    color: #fff;
+                }
+                .qodef-btn {
+					margin: 10px 0 6px;
+
+                    &:hover {
+                        color: #fff !important;
+                    }
+                }
+            }
+		}
+		
+		.qodef-pli-text-wrapper {
+            opacity: 0;
+			transition: opacity .2s cubic-bezier(.165,.84,.44,1);
+		}
+
+		&.qodef-pl-light {
+			.qodef-pli-text-holder {
+				background-color: #fff;
+
+				.qodef-pli-text {
+					.qodef-pli-title {
+						color: $default-heading-color !important;
+					}
+					.qodef-pli-category-holder a {
+						color: #c0c0c0;
+					}
+				}
+			}
+		}
+
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - end
+   ========================================================================== */

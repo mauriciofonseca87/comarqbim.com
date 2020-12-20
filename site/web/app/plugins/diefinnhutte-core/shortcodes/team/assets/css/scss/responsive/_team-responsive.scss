@@ -1,0 +1,14 @@
+@include phone-landscape {
+    .qodef-team-holder {
+        &.qodef-team-info-on-image-overlay {
+            .qodef-team-social-wrapper {
+                transform: scaleX(0);
+            }
+            &:hover {
+                .qodef-team-social-wrapper {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}

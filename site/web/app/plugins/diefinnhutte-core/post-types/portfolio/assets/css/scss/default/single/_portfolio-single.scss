@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	@include qodefRelativeHolderLayout();
+	margin: 0;
+	
+    .qodef-ps-image-holder {
+	    @include qodefRelativeHolderLayout();
+	    
+	    .qodef-ps-image {
+		    
+		    &:not(.qodef-item-space) {
+			    @include qodefRelativeHolderLayout();
+			    box-sizing: border-box;
+		    }
+		    
+		    a, img {
+			    position: relative;
+			    display: block;
+		    }
+	    }
+    }
+
+	h2 {
+		margin: 3px 0 0;
+	}
+	
+	.qodef-ps-info-holder {
+		@include qodefRelativeHolderLayout();
+		
+		.qodef-ps-info-item {
+			@include qodefRelativeHolderLayout();
+			margin: 0 0 17px;
+			
+			p, a {
+				margin: 0;
+				display: inline-block;
+				color: $default-text-color;
+
+				&:after {
+					content: ',';
+				}
+
+				&:last-of-type {
+					&:after {
+						content: '';
+					}
+				}
+			}
+
+			a {
+				position: relative;
+
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: 4px;
+					left: 0;
+					height: 1px;
+					background-color: currentColor;
+					width: 100%;
+					-webkit-transform-origin: 100% 50%;
+					-moz-transform-origin: 100% 50%;
+					transform-origin: 100% 50%;
+					transition: transform .4s cubic-bezier(.28,.38,0,.81);
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: 4px;
+					height: 1px;
+					background-color: currentColor;
+					width: 100%;
+					transform: scaleX(0);
+					-webkit-transform-origin: 0 50%;
+					-moz-transform-origin: 0 50%;
+					transform-origin: 0 50%;
+					transition: transform .4s cubic-bezier(.28,.38,0,.81) .2s;
+				}
+
+				&:hover {
+					&:before {
+						transform: scaleX(0);
+					}
+					&:after {
+						transform: scaleX(1);
+					}
+				}
+			}
+
+			&.qodef-ps-social-share {
+				.qodef-social-title {
+					color: $default-heading-color;
+				}
+
+				a {
+					&:hover {
+						color: $default-heading-color;
+					}
+
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+		
+		.qodef-ps-info-title,
+		p.qodef-social-title{
+			margin: 0 19px 0 0;
+			color: $default-heading-color;
+			text-transform: uppercase;
+			font-family: "Oswald";
+			font-size: 13px;
+			line-height: 1.455em;
+			letter-spacing: .1em;
+			font-weight: 600;
+		}
+	}
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+
+.qodef-portfolio-single-holder {
+	
+	.qodef-ps-image-holder {
+		
+		&.qodef-grid-masonry-list {
+			
+			.qodef-ps-image {
+				
+				a {
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */

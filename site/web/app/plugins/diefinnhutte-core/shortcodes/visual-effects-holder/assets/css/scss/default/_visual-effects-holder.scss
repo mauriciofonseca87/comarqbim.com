@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Visual Effects Holder shortcode style - begin
+   ========================================================================== */
+
+.qodef-visual-effects-holder {
+    &.qodef-veh-uncover {
+        visibility: hidden;
+
+        .no-touch & {
+            visibility: visible;
+
+            .qodef-veh-inner {
+                position: relative;
+                //overflow: hidden;
+            }
+
+            .qodef-veh-mask {
+                @include qodefAbsoluteHolderLayout();
+                z-index: 100;
+            }
+
+            @include keyframes(qodefUncoverX) {
+                0% {
+                    transform: scaleX(1);
+                }
+
+                100% {
+                    transform: scaleX(0);
+                }
+            }
+
+            @include keyframes(qodefUncoverY) {
+                0% {
+                    transform: scaleY(1);
+                }
+
+                100% {
+                    transform: scaleY(0);
+                }
+            }
+
+            @include keyframes(qodefFromTop) {
+                0% {
+                    transform: translate3d(0, -5%, 0);
+                }
+
+                100% {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+
+            @include keyframes(qodefFromRight) {
+                0% {
+                    transform: translate3d(5%, 0, 0);
+                }
+
+                100% {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+
+            @include keyframes(qodefFromBottom) {
+                0% {
+                    transform: translate3d(0, 5%, 0);
+                }
+
+                100% {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+
+            @include keyframes(qodefFromLeft) {
+                0% {
+                    transform: translate3d(-5%, 0, 0);
+                }
+
+                100% {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+
+            &.qodef-show-item {
+                &.qodef-veh-from-top {
+                    .qodef-veh-mask {
+                        -webkit-transform-origin: 50% 100%;
+                        transform-origin: 50% 100%;
+                        animation: qodefUncoverY 1s cubic-bezier(.645,.045,.355,1) forwards;
+                    }
+
+                    .qodef-veh-content {
+                        animation: qodefFromTop 1.2s forwards;
+                    }
+                }
+
+                &.qodef-veh-from-right {
+                    .qodef-veh-mask {
+                        -webkit-transform-origin: 0% 50%;
+                        transform-origin: 0% 50%;
+                        animation: qodefUncoverX 1s cubic-bezier(.645,.045,.355,1) forwards;
+                    }
+
+                    .qodef-veh-content {
+                        animation: qodefFromRight 1.2s forwards;
+                    }
+                }
+
+                &.qodef-veh-from-bottom {
+                    .qodef-veh-mask {
+                        -webkit-transform-origin: 50% 0%;
+                        transform-origin: 50% 0%;
+                        animation: qodefUncoverY 1s cubic-bezier(.645,.045,.355,1) forwards;
+                    }
+
+                    .qodef-veh-content {
+                        animation: qodefFromBottom 1.2s forwards;
+                    }
+                }
+
+                &.qodef-veh-from-left {
+                    .qodef-veh-mask {
+                        -webkit-transform-origin: 100% 50%;
+                        transform-origin: 100% 50%;
+                        animation: qodefUncoverX 1s cubic-bezier(.645,.045,.355,1) forwards;
+                    }
+
+                    .qodef-veh-content {
+                        animation: qodefFromLeft 1.2s forwards;
+                    }
+                }
+            }
+        }
+
+        .touch & {
+            visibility: visible;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Visual Effects Holder shortcode style - end
+   ========================================================================== */

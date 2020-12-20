@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+.qodef-instagram-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.qodef-instagram-list-holder:not(.qodef-il-one-column) .qodef-il-item {
+  float: left;
+}
+
+.qodef-instagram-list-holder .qodef-instagram-carousel .qodef-il-item {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+.qodef-instagram-list-holder .qodef-il-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.qodef-instagram-list-holder.qodef-il-two-columns .qodef-il-item {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .qodef-instagram-list-holder.qodef-il-two-columns .qodef-il-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.qodef-instagram-list-holder.qodef-il-three-columns .qodef-il-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .qodef-instagram-list-holder.qodef-il-three-columns .qodef-il-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.qodef-instagram-list-holder.qodef-il-four-columns .qodef-il-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .qodef-instagram-list-holder.qodef-il-four-columns .qodef-il-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.qodef-instagram-list-holder.qodef-il-five-columns .qodef-il-item {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .qodef-instagram-list-holder.qodef-il-five-columns .qodef-il-item:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/diefinnhutte-instagram-feed/assets/css/shortcodes-map.css.map */

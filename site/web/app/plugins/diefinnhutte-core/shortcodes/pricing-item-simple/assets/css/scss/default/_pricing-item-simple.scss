@@ -1,0 +1,109 @@
+.qodef-price-item-simple {
+    .qodef-pis-inner {
+        @include qodefRelativeHolderLayout();
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+
+                &.qodef-pis-prices {
+                    position: absolute;
+                    padding: 30px 0 0;
+                    top: 0;
+                    left: 0;
+                    max-width: 160px;
+                    box-sizing: border-box;
+
+                    .qodef-pis-value {
+                        position: relative;
+                        vertical-align: super;
+                        bottom: -2px;
+                        font-size: 35px;
+                        line-height: 1em;
+                        font-weight: 300;
+                        color: $default-heading-color;
+                    }
+
+                    .qodef-pis-price {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 55px;
+                        line-height: 1em;
+                        letter-spacing: -0.02em;
+                        font-weight: 300;
+                        color: $default-heading-color;
+                    }
+
+                    .qodef-pis-mark {
+                        position: relative;
+                        display: block;
+                        margin: 8px 0 0 0;
+                        font-family: $default-text-font;
+                        color: $default-text-color;
+                        font-size: 11px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                    }
+                }
+
+                &.qodef-pis-content-holder {
+                    padding: 30px 15px 0 170px;
+
+                    .qodef-pis-title-holder {
+                        position: relative;
+                        color: $default-heading-color;
+                        font-size: 30px;
+                        line-height: 26px;
+                        font-weight: 400;
+
+                        .qodef-pis-title {
+                            display: block;
+                            padding: 5px 0 0;
+                            box-sizing: border-box;
+                        }
+                    }
+
+                    .qodef-pis-additional-title-holder {
+                        position: relative;
+                        color: $default-text-color;
+
+                        .qodef-pis-additional-title {
+                            display: block;
+                            padding: 15px 28px 5px 0;
+                            box-sizing: border-box;
+                        }
+                    }
+
+                    .qodef-pis-content {
+                        padding: 15px 0 25px;
+                        ul li {
+                            padding: 7px 0;
+                            color: $default-text-color;
+
+                            &:before {
+                                content: "\4e";
+                                font-family: ElegantIcons;
+                                font-size: 16px;
+                                color: $default-heading-color;
+                                position: relative;
+                                top: 3px;
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+
+                    .qodef-pis-button {
+                        padding: 0 0 30px;
+                    }
+                }
+            }
+        }
+    }
+}

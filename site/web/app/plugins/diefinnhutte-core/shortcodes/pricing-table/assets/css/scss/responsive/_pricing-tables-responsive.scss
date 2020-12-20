@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Pricing Tables shortcode style Responsive - begin
+   ========================================================================== */
+
+    .qodef-price-table {
+
+        @include ipad-landscape {
+            .qodef-pt-inner .qodef-pt-image-background-window {
+                width: 68px;
+            }
+        }
+        @include ipad-portrait {
+            .qodef-pt-inner .qodef-pt-image-background-window {
+                width: 86px;
+            }
+
+            .qodef-pt-inner ul li.qodef-pt-content ul li {
+                padding-right: 29%;
+            }
+        }
+    }
+
+
+/* ==========================================================================
+   Pricing Tables shortcode style Responsive - end
+   ========================================================================== */
