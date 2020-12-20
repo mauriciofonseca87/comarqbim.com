@@ -31,3 +31,4 @@ wp-cli.local.yml
 !web/app/plugins/envato-market
 !web/app/plugins/js_composer
 !web/app/plugins/revslider
+!web/app/plugins/woocommerce-gateway-paypal-express-checkout
