@@ -25,3 +25,11 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+# Plugins managed outside Composer
+!web/app/plugins/diefinnhutte-core
+!web/app/plugins/diefinnhutte-instagram-feed
+!web/app/plugins/diefinnhutte-twitter-feed
+!web/app/plugins/envato-market
+!web/app/plugins/js_composer
+!web/app/plugins/revslider
