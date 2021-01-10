@@ -1,4 +1,4 @@
-php_error_reporting: 'E_ALL'
+php_error_reporting: 'E_ALL & ~E_NOTICE'
 php_display_errors: 'On'
 php_display_startup_errors: 'On'
 php_track_errors: 'On'
