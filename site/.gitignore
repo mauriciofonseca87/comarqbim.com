@@ -36,3 +36,4 @@ database_backup/*
 !web/app/plugins/revslider
 !web/app/plugins/woocommerce-gateway-paypal-express-checkout
 !web/app/plugins/woo-gateway-paguelofacil-3.5-3
+!web/app/plugins/woo-country-restrictions-advanced-premium
