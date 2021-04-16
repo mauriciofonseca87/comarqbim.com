@@ -80,9 +80,8 @@ jQuery(window).on('load', function () {
 
 	$popup.css({
 		top: (jQuery(window).height() - $popup.height()) / 2,
-		left: (jQuery(window).width() - $popup.width()) / 2
+		left: jQuery(window).width() > 500 ? (jQuery(window).width() - $popup.width()) / 2 : ''
 	});
-
 });
 
 function wcacrRemoveCountrySelectorFromCache(cacheKey) {

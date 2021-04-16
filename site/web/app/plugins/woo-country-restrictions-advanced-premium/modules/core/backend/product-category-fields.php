@@ -355,7 +355,7 @@ if (!function_exists('wcacr_render_category_restricted_notice')) {
 		$term_taxonomy = $wpdb->get_row("SELECT * FROM $wpdb->term_taxonomy WHERE term_id = " . (int) $inherited_from_taxonomy, ARRAY_A);
 		$term = get_term_by('term_id', $inherited_from_taxonomy, $term_taxonomy['taxonomy']);
 		?>
-		<p><?php printf(__('The restrictions are inherited from the category: <a href="%s" target="_blank">%s</a>'), admin_url('term.php?taxonomy=' . $term->taxonomy . '&tag_ID=' . $term->term_id), $term->name); ?></p>
+		<p><?php printf(__('The restrictions are inherited from the category: <a href="%s" target="_blank">%s</a>', VCWCCR_TEXT_DOMAIN), admin_url('term.php?taxonomy=' . $term->taxonomy . '&tag_ID=' . $term->term_id), $term->name); ?></p>
 		<script>
 			jQuery(document).ready(function () {
 				jQuery('#product_country_availability_operator, .product-selected-countries-field').prop('disabled', true);

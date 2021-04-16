@@ -209,9 +209,15 @@ if (!function_exists("wcacr_set_user_country")) {
 			if (isset($_SERVER['HTTP_X_REAL_IP'])) {
 				unset($_SERVER['HTTP_X_REAL_IP']);
 			}
+			$server_ip_key = get_option('wccr_ip_server_key');
+			// empty string to use the ip detection built-in WC
+			$ip = '';
+			if (!empty($server_ip_key) && isset($_SERVER[$server_ip_key])) {
+				$ip = $_SERVER[$server_ip_key];
+			}
 			// Allow to reset cookie by using ?wcacr_reset=1
 			if (empty($_COOKIE[WCACR_USER_COUNTRY_COOKIE]) || !empty($_GET['wcacr_reset'])) {
-				$location = WC_Geolocation::geolocate_ip('', true);
+				$location = WC_Geolocation::geolocate_ip($ip, true);
 				$my_country = $location['country'];
 			}
 		}

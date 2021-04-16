@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Google Ads &amp; Marketing by Kliken - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-19 06:14:48+0000\n"
+"PO-Revision-Date: 2021-01-28 07:08:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,7 +11,23 @@ msgstr ""
 "Language: es\n"
 "Project-Id-Version: Plugins - Google Ads &amp; Marketing by Kliken - Stable (latest release)\n"
 
+#. translators: %s: Version number of WooCommerce required to run plugin. Do
+#. not translate.
+#: classes/class-plugin.php:279
+msgid "Google Ads & Marketing by Kliken requires WooCommerce version %s or greater"
+msgstr "Google Ads & Marketing by Kliken necesita la versión %s o superior de WooCommerce"
+
+#: classes/class-plugin.php:273
+msgid "Google Ads & Marketing by Kliken requires WooCommerce to be activated"
+msgstr "Google Ads & Marketing by Kliken necesita que WooCommerce esté activado"
+
+#: classes/class-plugin.php:55
+msgid "Google Ads & Marketing by Kliken plugin can only be called once"
+msgstr "Solo se puede llamar una vez al plugin Google Ads & Marketing by Kliken"
+
 #. Plugin Name of the plugin
+#: pages/dashboard.php:13 pages/getstarted.php:28
+#: classes/class-wc-integration.php:25
 msgid "Google Ads & Marketing by Kliken"
 msgstr "Google Ads & Marketing by Kliken"
 
@@ -124,16 +140,6 @@ msgstr "Token de la aplicación"
 msgid "Account Id"
 msgstr "ID de la cuenta"
 
-#. translators: %s: Version number of WooCommerce required to run plugin. Do
-#. not translate.
-#: classes/class-plugin.php:279
-msgid "Google Ads for WooCommerce requires WooCommerce version %s or greater"
-msgstr "Google Ads for WooCommerce necesita la versión de WooCommerce %s o superior"
-
-#: classes/class-plugin.php:273
-msgid "Google Ads for WooCommerce requires WooCommerce to be activated"
-msgstr "Google Ads for WooCommerce necesita que WooCommerce esté activado"
-
 #: classes/class-plugin.php:208
 msgid "This will dismiss the message permanently. Are you sure?"
 msgstr "Esto descartará el mensaje permanentemente. ¿Estás seguro?"
@@ -146,14 +152,10 @@ msgstr "Soporte"
 msgid "Dashboard"
 msgstr "Escritorio"
 
-#: classes/class-plugin.php:55
-msgid "Google Ads for WooCommerce plugin can only be called once"
-msgstr "Solo se puede llamar una vez al plugin Google Ads for WooCommerce"
-
 #. translators: %s: A hyperlink
 #: classes/class-helper.php:465
-msgid "<strong>Google Ads for WooCommerce plugin is almost ready.</strong> <a href=\"%s\">Click here</a> to get started."
-msgstr "<strong>El plugin Google Ads for WooCommerce está casi listo.</strong> <a href=\"%s\">Haz clic aquí</a> para empezar."
+msgid "<strong>Google Ads & Marketing by Kliken plugin is almost ready.</strong> <a href=\"%s\">Click here</a> to get started."
+msgstr "<strong>El plugin Google Ads & Marketing by Kliken está casi listo.</strong> <a href=\"%s\">Haz clic aquí</a> para empezar."
 
 #. Author URI of the plugin
 msgid "http://kliken.com/"
@@ -170,8 +172,3 @@ msgstr "La solución automatizada de Google Shopping para hacer que tus producto
 #. Plugin URI of the plugin
 msgid "https://woo.kliken.com/"
 msgstr "https://woo.kliken.com/"
-
-#: classes/class-wc-integration.php:25 pages/getstarted.php:28
-#: pages/dashboard.php:13
-msgid "Google Ads for WooCommerce"
-msgstr "Google Ads for WooCommerce"

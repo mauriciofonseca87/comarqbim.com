@@ -2,7 +2,7 @@
 /*
   Plugin Name: WooCommerce Country Restrictions - Advanced Pro
   Description: Restricts products and variations by country, globally or product by product.
-  Version: 1.12.0
+  Version: 1.12.1
   WC requires at least: 3.0
   WC tested up to: 4.6.0
   Author: WP Super Admins
@@ -32,7 +32,7 @@ if (!class_exists('WC_Advanced_Country_Restrictions_Dist')) {
 
 		static private $instance = false;
 		static $dir = __DIR__;
-		static $version = '1.12.0';
+		static $version = '1.12.1';
 		static $name = 'Advanced Country Restrictions';
 		var $args = null;
 		var $vg_plugin_sdk = null;

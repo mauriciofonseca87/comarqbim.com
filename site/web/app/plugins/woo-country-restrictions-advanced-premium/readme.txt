@@ -1,8 +1,8 @@
 === WooCommerce Country Catalogs - Product Country Restrictions ===
 Contributors: vegacorp,josevega, freemius
 Tags: woocommerce, country restrictions, geolocalization
-Tested up to: 5.5
-Stable tag: 1.12.0
+Tested up to: 5.7
+Stable tag: 1.12.1
 Requires at least: 3.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -129,6 +129,13 @@ The [premium version](https://wpsuperadmins.com/plugins/woocommerce-country-cata
 1. Settings in the product editor
 
 == Changelog ==
+
+= 1.12.1 - 2021-03-08 =
+* CHANGE - Improve translations
+* CHANGE - Improve wprocket integration
+* CHANGE - Improve mobile styles of popup
+* CHANGE - Prevent minor configuration errors
+* FIX - Country selector doesn't load the first time when we are using cache compatibility
 
 = 1.12.0 - 2020-12-28 =
 * NEW - Improve handling of restrictions

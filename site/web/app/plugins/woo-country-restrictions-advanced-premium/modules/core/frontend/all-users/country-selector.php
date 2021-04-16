@@ -37,6 +37,9 @@ if (!class_exists('WCACR_Country_Selector')) {
 		}
 
 		function render_popup() {
+			if (get_option('wccr_geolocation_method', 'ip') !== 'country_selector') {
+				return;
+			}
 			if (!get_option('wccr_country_selector_show_popup')) {
 				return;
 			}
@@ -124,7 +127,7 @@ if (!class_exists('WCACR_Country_Selector')) {
 			</style>
 			<div class="wcacr-country-selector-popup-shadow"></div>
 			<div class="wcacr-country-selector-popup">
-				<a href="#wcacr-close" class="wcacr-close">Close</a>
+				<a href="#wcacr-close" class="wcacr-close"><?php _e('Close', VCWCCR_TEXT_DOMAIN); ?></a>
 
 				<?php echo wp_kses_post($message); ?>
 				<ul class="wccr-country-selector-independent"><?php echo $full_selector; ?></ul>
@@ -189,6 +192,11 @@ if (!class_exists('WCACR_Country_Selector')) {
 
 		function get_countries_list() {
 			$default_country = wcacr_get_user_country();
+			// We get the default country from the settings again because wcacr_get_user_country
+			//  will not return any country if we are using the cache compatibility
+			if (!$default_country) {
+				$default_country = get_option('wccr_default_country');
+			}
 			$allowed_countries = get_option('wccr_country_selector_options');
 			$list = array();
 			if (empty($allowed_countries)) {
@@ -384,7 +392,7 @@ if (!class_exists('WCACR_Country_Selector')) {
 								return regex.test(jQuery(this).attr('id'));
 							}));
 						} else {
-							$menuContainers.push(jQuery('li.menu-item:first, li.page_item:first').parent(), jQuery('#wprmenu_menu_ul'), jQuery('#responsive-menu-pro-container li.menu-item:first').parent(), jQuery('.ubermenu-nav'));
+							$menuContainers.push(jQuery('li.menu-item:first, li.page_item:first').parent(), jQuery('#mobile-navigation ul'), jQuery('#wprmenu_menu_ul'), jQuery('#responsive-menu-pro-container li.menu-item:first').parent(), jQuery('.ubermenu-nav'));
 						}
 					}
 
@@ -436,6 +444,22 @@ if (!class_exists('WCACR_Country_Selector')) {
 
 					jQuery('body').on('click', 'a.wcacr-current-country-link', function (e) {
 						e.preventDefault();
+						var $submenu = jQuery(this).parent().find('ul');
+						if ($submenu.is(':visible')) {
+							$submenu.css({
+								'display': 'block',
+								'visibility': 'visible',
+								'opacity': '1',
+								'max-height': 'initial'
+							});
+						} else {
+							$submenu.css({
+								'display': 'none',
+								'visibility': 'hidden',
+								'opacity': '1',
+								'max-height': 'initial'
+							});
+						}
 					});
 				});
 			</script>

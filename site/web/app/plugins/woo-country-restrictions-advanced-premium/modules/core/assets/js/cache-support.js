@@ -103,6 +103,10 @@ jQuery(document).ready(function () {
 				$prices.show();
 			}
 		}
+		// Update the country selector in case the country changed during the ajax call
+		if (restrictions['li.wccr-country-selector.menu-item']) {
+			jQuery(restrictions['li.wccr-country-selector.menu-item']).replaceAll('li.wccr-country-selector.menu-item');
+		}
 	}
 
 	function enforceRestrictions(restrictions, fromCache) {
@@ -173,6 +177,11 @@ jQuery(document).ready(function () {
 
 			if (typeof cache[cacheKey] !== 'undefined') {
 				out = cache[cacheKey];
+				// If we have cache for a specific country, update the cookie so we 
+				// have the country code for other pages too
+				if (out['country']) {
+					wcacrSetCookie('wcacr_user_country', out['country'], 30);
+				}
 			}
 		} catch (err) {
 		}
