@@ -20,6 +20,8 @@ if (!function_exists('vcwccr_country_shortcode')) {
 		if (empty($user_country) && !$show_if_unknown_country) {
 			return;
 		}
+		// Prevent errors. Sometimes users add forward/backward quotes to the shortcode
+		$countries = str_replace(array('‘', '’', '“', '”'), '', $countries);
 
 		$countries = array_map('strtoupper', vcwccr_replace_continent(array_map('trim', explode(',', $countries))));
 		if (( $disallowed && in_array($user_country, $countries)) || (!$disallowed && !in_array($user_country, $countries))) {

@@ -170,14 +170,6 @@ if (!function_exists("vcwccr_tab_get_settings")) {
 					'id' => 'wccr_country_selector_popup_intro',
 					'class' => 'wcaccr-country-selector-enabled',
 				),
-				'wccr_country_selector_linked_shipping_country' => array(
-					'name' => __('Sync the dropdown selector with the shipping information?', VCWCCR_TEXT_DOMAIN),
-					'desc' => __('When we select a country/state in the selector, automatically set it as shipping country/state. When we change shipping country/state, automatically select it on the dropdown selector', VCWCCR_TEXT_DOMAIN),
-					'type' => 'select',
-					'id' => 'wccr_country_selector_linked_shipping_country',
-					'options' => array('' => 'No', 'yes' => 'Yes'),
-					'class' => 'wc-enhanced-select wcaccr-country-selector-enabled',
-				),
 			),
 			'restriction_enforcement' => array(
 				'title' => __('Restriction enforcement', VCWCCR_TEXT_DOMAIN),
@@ -248,6 +240,14 @@ if (!function_exists("vcwccr_tab_get_settings")) {
 						'yes' => __('Yes', VCWCCR_TEXT_DOMAIN),
 					),
 					'id' => 'wccr_apply_restrictions_when_admin_creates_order',
+				),
+				'wccr_country_selector_linked_shipping_country' => array(
+					'name' => __('Sync the country detection with the shipping information?', VCWCCR_TEXT_DOMAIN),
+					'desc' => __('When we select a country/state in the selector, automatically set it as shipping country/state. When we change shipping country/state, automatically select it on the dropdown selector', VCWCCR_TEXT_DOMAIN),
+					'type' => 'select',
+					'id' => 'wccr_country_selector_linked_shipping_country',
+					'options' => array('' => 'No', 'yes' => 'Yes'),
+					'class' => 'wc-enhanced-select',
 				),
 			),
 			'restrict_products' => array(
@@ -328,6 +328,13 @@ if (!function_exists("vcwccr_tab_get_settings")) {
 						'yes' => __('Yes', VCWCCR_TEXT_DOMAIN),
 					),
 					'id' => 'wccr_enable_rest_api_restrictions',
+				),
+				'wccr_ip_server_key' => array(
+					'name' => __('Server key where the IP is saved', VCWCCR_TEXT_DOMAIN),
+					'desc' => __('Default: We use $_SERVER[REMOTE_ADDR]. But if your site uses a proxy, the real visitor IP might be saved in a different key. Enter the key here.', VCWCCR_TEXT_DOMAIN),
+					'id' => 'wccr_ip_server_key',
+					'type' => 'text',
+					'class' => 'wccr_ip_server_key',
 				),
 			),
 			'shortcodes' => array(

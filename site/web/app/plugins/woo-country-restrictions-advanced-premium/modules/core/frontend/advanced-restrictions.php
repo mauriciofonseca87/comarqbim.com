@@ -156,9 +156,9 @@ if (!function_exists('vcwccr_maybe_remove_product_from_cart')) {
 		$geolocation_method_key = get_option('wccr_geolocation_method', 'ip');
 		$billing_country_key = apply_filters('vcwccr_billing_country_key_from_cart', 'billing_country');
 		$shipping_country_key = apply_filters('vcwccr_billing_country_key_from_cart', 'shipping_country');
+		$shipping_country = ( empty($checkout_data['ship_to_different_address']) ) ? $checkout_data[$billing_country_key] : $checkout_data[$shipping_country_key];
 
 		if (in_array($geolocation_method_key, array('shipping_country', 'billing_country'))) {
-			$shipping_country = ( empty($checkout_data['ship_to_different_address']) ) ? $checkout_data[$billing_country_key] : $checkout_data[$shipping_country_key];
 			$country = null;
 			if ($geolocation_method_key === 'shipping_country' && !empty($shipping_country)) {
 				$country = $shipping_country;
@@ -174,11 +174,10 @@ if (!function_exists('vcwccr_maybe_remove_product_from_cart')) {
 		}
 		$country = wcacr_get_user_country();
 
-		// If the country selector is linked to the shipping country, set the shipping country as user country
-		if (get_option('wccr_geolocation_method') === 'country_selector' && get_option('wccr_country_selector_linked_shipping_country') === 'yes') {
-			$shipping_country = ( empty($checkout_data['ship_to_different_address']) ) ? $checkout_data[$billing_country_key] : $checkout_data[$shipping_country_key];
+		// If the country detection is linked to the shipping country, set the shipping country as user country
+		if (get_option('wccr_country_selector_linked_shipping_country') === 'yes') {
 			if (!empty($shipping_country)) {
-				// The country selector needs this, otherwise the set_user_country has no result
+				// The country selector needs this $_GET var, otherwise the set_user_country has no result
 				$_GET['wccr_country'] = $shipping_country;
 				wcacr_set_user_country($shipping_country);
 			}

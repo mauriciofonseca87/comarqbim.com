@@ -15,7 +15,11 @@
 		// Extend button style
 		@include button-style();
 		display: inline-block;
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 		// Remove :focus styles in the editor
 		&:focus {
 			outline-offset: inherit;

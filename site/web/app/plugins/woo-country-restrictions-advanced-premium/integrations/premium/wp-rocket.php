@@ -13,14 +13,14 @@ if (!class_exists('WCACR_WP_Rocket')) {
 		function init() {
 
 			add_action('admin_init', array($this, 'wprocket_compat_init'));
+			add_filter('rocket_htaccess_mod_rewrite', '__return_false');
+			add_filter('rocket_cache_dynamic_cookies', array($this, 'wprocket_compat_cookies'));
 		}
 
 		function wprocket_compat_init() {
 			if (!function_exists('flush_rocket_htaccess') || !function_exists('rocket_generate_config_file')) {
 				return;
 			}
-			add_filter('rocket_htaccess_mod_rewrite', '__return_false');
-			add_filter('rocket_cache_dynamic_cookies', array($this, 'wprocket_compat_cookies'));
 
 
 			$flag_key = 'wcacr_rocket_compat_set';

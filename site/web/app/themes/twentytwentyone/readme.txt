@@ -3,7 +3,11 @@ Contributors: wordpressdotorg
 Requires at least: 5.3
 Tested up to: 5.9
 Requires PHP: 5.6
+<<<<<<< HEAD
 Stable tag: 1.5
+=======
+Stable tag: 1.2
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +34,7 @@ No data is saved in the database or transferred.
 
 == Changelog ==
 
+<<<<<<< HEAD
 = 1.5 =
 * Released: January 25, 2022
 
@@ -45,6 +50,8 @@ https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.4
 
 https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.3
 
+=======
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 = 1.2 =
 * Released: March 9, 2021
 
@@ -62,7 +69,11 @@ https://wordpress.org/support/article/twenty-twenty-one-changelog#Version_1.0
 
 == Copyright ==
 
+<<<<<<< HEAD
 Twenty Twenty-One WordPress Theme, 2020-2022 WordPress.org
+=======
+Twenty Twenty-One WordPress Theme, 2020-2021 WordPress.org
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 Twenty Twenty-One is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -80,6 +91,7 @@ Twenty Twenty-One is derived from Seedlet, (C) 2020 Automattic, Inc.
 
 Twenty Twenty-One is also based on:
 
+<<<<<<< HEAD
 Twenty Nineteen. 2018-2022 WordPress.org
 Twenty Nineteen is distributed under the terms of the GNU GPL v2 or later.
 
@@ -93,6 +105,21 @@ Twenty Twenty. Copyright (C) 2020-2022 WordPress.org
 Twenty Twenty is distributed under the terms of the GNU GPL v2 or later.
 
 Underscores https://underscores.me/, Copyright (C) 2012-2022 Automattic, Inc.
+=======
+Twenty Nineteen. 2018-2021 WordPress.org
+Twenty Nineteen is distributed under the terms of the GNU GPL v2 or later.
+
+Twenty Seventeen. Copyright (C) 2016-2021 WordPress.org
+Twenty Seventeen is distributed under the terms of the GNU GPL v2 or later.
+
+Twenty Sixteen. Copyright (C) 2015-2021 WordPress.org
+Twenty Sixteen is distributed under the terms of the GNU GPL v2 or later.
+
+Twenty Twenty. Copyright (C) 2020-2021 WordPress.org
+Twenty Twenty is distributed under the terms of the GNU GPL v2 or later.
+
+Underscores https://underscores.me/, Copyright (C) 2012-2021 Automattic, Inc.
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of

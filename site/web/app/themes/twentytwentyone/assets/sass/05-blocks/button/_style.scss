@@ -47,7 +47,11 @@ input[type="reset"],
 			}
 		}
 
+<<<<<<< HEAD
 		// Hover Button color should match parent element foreground color
+=======
+		// Hover Button color should match parent element foreground color 
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 		.wp-block-button__link:hover,
 		.wp-block-button__link:active {
 			border-color: currentColor !important;
@@ -103,7 +107,11 @@ input[type="reset"],
 				color: var(--local--color-background, var(--global--color-background)) !important;
 			}
 
+<<<<<<< HEAD
 			.has-text-color & {
+=======
+			.has-text-color & {	
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 				color: var(--local--color-background, var(--global--color-background)) !important;
 			}
 		}

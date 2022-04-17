@@ -9,7 +9,11 @@ Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the
 Requires at least: 5.3
 Tested up to: 5.9
 Requires PHP: 5.6
+<<<<<<< HEAD
 Version: 1.5
+=======
+Version: 1.2
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentytwentyone
@@ -1317,7 +1321,15 @@ blockquote p {
 	line-height: 1.7;
 }
 
+<<<<<<< HEAD
 blockquote cite,
+=======
+blockquote cite {
+	font-weight: normal;
+	letter-spacing: normal;
+}
+
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 blockquote footer {
 	font-weight: normal;
 	letter-spacing: normal;
@@ -2005,6 +2017,10 @@ fieldset input[type=checkbox] + label {
 
 img {
 	height: auto;
+<<<<<<< HEAD
+=======
+	max-width: 100%;
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 	vertical-align: middle;
 }
 
@@ -2131,6 +2147,13 @@ a:hover {
 
 .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button).custom-logo-link {
 	background: none;
+<<<<<<< HEAD
+=======
+}
+
+.site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) img {
+	outline: 2px dotted #28303d;
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 }
 
 .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) img {
@@ -2151,7 +2174,25 @@ a:hover {
 /**
  * Button
  */
+<<<<<<< HEAD
 .site .button,
+button {
+=======
+.site .button {
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
+	border: 3px solid transparent;
+	border-radius: 0;
+	cursor: pointer;
+	font-weight: 500;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5;
+<<<<<<< HEAD
+=======
+	padding: 15px 30px;
+	text-decoration: none;
+}
+
 button {
 	border: 3px solid transparent;
 	border-radius: 0;
@@ -2160,6 +2201,7 @@ button {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1.25rem;
 	line-height: 1.5;
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 	padding: 15px 30px;
 	text-decoration: none;
 }
@@ -2188,8 +2230,126 @@ input[type=reset] {
 	text-decoration: none;
 }
 
+<<<<<<< HEAD
 .wp-block-search .wp-block-search__button,
 .wp-block-button .wp-block-button__link,
+.wp-block-file a.wp-block-file__button {
+=======
+.wp-block-search .wp-block-search__button {
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
+	border: 3px solid transparent;
+	border-radius: 0;
+	cursor: pointer;
+	font-weight: 500;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	padding: 15px 30px;
+	text-decoration: none;
+}
+
+<<<<<<< HEAD
+.site .button:not(:hover):not(:active):not(.has-text-color) {
+	color: #d1e4dd;
+}
+
+button:not(:hover):not(:active):not(.has-text-color) {
+	color: #d1e4dd;
+}
+
+input[type=submit]:not(:hover):not(:active):not(.has-text-color) {
+	color: #d1e4dd;
+}
+
+input[type=reset]:not(:hover):not(:active):not(.has-text-color) {
+	color: #d1e4dd;
+}
+
+.wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-text-color) {
+	color: #d1e4dd;
+}
+
+.wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
+	color: #d1e4dd;
+}
+
+.wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
+	color: #d1e4dd;
+}
+
+.has-background .site .button:not(:hover):not(:active):not(.has-text-color) {
+	color: #28303d;
+}
+
+.has-background button:not(:hover):not(:active):not(.has-text-color) {
+	color: #28303d;
+}
+
+.has-background input[type=submit]:not(:hover):not(:active):not(.has-text-color) {
+	color: #28303d;
+}
+
+.has-background input[type=reset]:not(:hover):not(:active):not(.has-text-color) {
+	color: #28303d;
+}
+
+.has-background .wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-text-color) {
+	color: #28303d;
+}
+
+.has-background .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-text-color) {
+	color: #28303d;
+}
+
+.has-background .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
+	color: #28303d;
+}
+
+.has-background .site .button:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: #28303d;
+}
+
+.has-background button:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: #28303d;
+}
+
+.has-background input[type=submit]:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: #28303d;
+}
+
+.has-background input[type=reset]:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: #28303d;
+}
+
+.has-background .wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: #28303d;
+}
+
+.has-background .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: #28303d;
+}
+
+.has-background .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: #28303d;
+}
+
+.site .button:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+=======
+.wp-block-button .wp-block-button__link {
+	border: 3px solid transparent;
+	border-radius: 0;
+	cursor: pointer;
+	font-weight: 500;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	padding: 15px 30px;
+	text-decoration: none;
+}
+
 .wp-block-file a.wp-block-file__button {
 	border: 3px solid transparent;
 	border-radius: 0;
@@ -2290,6 +2450,7 @@ input[type=reset]:not(:hover):not(:active):not(.has-text-color) {
 	background-color: #28303d;
 }
 
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 button:not(:hover):not(:active):not(.has-background) {
 	background-color: #28303d;
 }
@@ -2308,6 +2469,7 @@ input[type=reset]:not(:hover):not(:active):not(.has-background) {
 
 .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-background) {
 	background-color: #28303d;
+<<<<<<< HEAD
 }
 
 .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
@@ -2372,6 +2534,72 @@ input[type=reset]:focus,
 	outline: 2px dotted currentColor;
 }
 
+=======
+}
+
+.wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.has-background .site .button:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.has-background button:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.has-background input[type=submit]:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.has-background input[type=reset]:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.has-background .wp-block-search .wp-block-search__button:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.has-background .wp-block-button .wp-block-button__link:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.has-background .wp-block-file a.wp-block-file__button:not(:hover):not(:active):not(.has-background) {
+	background-color: #28303d;
+}
+
+.site .button:hover,
+.site .button:active,
+button:hover,
+button:active,
+input[type=submit]:hover,
+input[type=submit]:active,
+input[type=reset]:hover,
+input[type=reset]:active,
+.wp-block-search .wp-block-search__button:hover,
+.wp-block-search .wp-block-search__button:active,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:active,
+.wp-block-file a.wp-block-file__button:hover,
+.wp-block-file a.wp-block-file__button:active {
+	background-color: transparent;
+	border-color: currentColor;
+	color: inherit;
+}
+
+.site .button:focus,
+button:focus,
+input[type=submit]:focus,
+input[type=reset]:focus,
+.wp-block-search .wp-block-search__button:focus,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-file a.wp-block-file__button:focus {
+	outline-offset: -6px;
+	outline: 2px dotted currentColor;
+}
+
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 .site .button:disabled {
 	background-color: rgba(255, 255, 255, 0.5);
 	border-color: rgba(255, 255, 255, 0.5);
@@ -2678,7 +2906,25 @@ input[type=reset]:disabled {
 	padding-right: 20px;
 }
 
+<<<<<<< HEAD
 .wp-block-cover,
+=======
+.wp-block-cover {
+	background-color: #000;
+	min-height: 450px;
+	margin-top: inherit;
+	margin-bottom: inherit;
+
+	/* default & custom background-color */
+
+	/* Treating H2 separately to account for legacy /core styles */
+
+	/* Block Styles */
+
+	/* The background color class is used just for the overlay, and does not need to be applied to the inner container. */
+}
+
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 .wp-block-cover-image {
 	background-color: #000;
 	min-height: 450px;
@@ -3189,6 +3435,13 @@ h6,
 .entry-content > *[class=wp-block-image] + *,
 .entry-content [class*=inner-container] > *[class=wp-block-image] + * {
 	margin-top: 0;
+<<<<<<< HEAD
+=======
+}
+
+.wp-block-image.is-style-twentytwentyone-border img {
+	border: 3px solid #28303d;
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 }
 
 .wp-block-image.is-style-twentytwentyone-border img,

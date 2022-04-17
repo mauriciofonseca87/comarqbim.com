@@ -1,15 +1,15 @@
-# Copyright (C) 2020 WP Super Admins
+# Copyright (C) 2021 WP Super Admins
 # This file is distributed under the same license as the WooCommerce Country Restrictions - Advanced plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Country Restrictions - Advanced 1.12.0\n"
+"Project-Id-Version: WooCommerce Country Restrictions - Advanced 1.12.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wrapper-plugin\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-12-29T05:26:25+00:00\n"
+"POT-Creation-Date: 2021-03-09T03:52:03+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 
@@ -328,84 +328,76 @@ msgstr ""
 msgid "Popup selector: Display a message in the header of the popup"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:174
-msgid "Sync the dropdown selector with the shipping information?"
-msgstr ""
-
 #: modules/core/backend/settings-page.php:175
-msgid "When we select a country/state in the selector, automatically set it as shipping country/state. When we change shipping country/state, automatically select it on the dropdown selector"
-msgstr ""
-
-#: modules/core/backend/settings-page.php:183
 msgid "Restriction enforcement"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:185
+#: modules/core/backend/settings-page.php:177
 msgid "Message shown in the product page when the product is restricted"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:186
+#: modules/core/backend/settings-page.php:178
 msgid "Default: This product is not available for your country."
 msgstr ""
 
-#: modules/core/backend/settings-page.php:191
+#: modules/core/backend/settings-page.php:183
 msgid "Message shown in the checkout and cart pages when buying a restricted product"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:192
+#: modules/core/backend/settings-page.php:184
 msgid "Default: The product: {title} is not available for your country."
 msgstr ""
 
-#: modules/core/backend/settings-page.php:197
+#: modules/core/backend/settings-page.php:189
 msgid "What happens when there are zero allowed products for the catalog pages?"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:198
+#: modules/core/backend/settings-page.php:190
 msgid "Default: Show error 404 (Category not found). Catalog pages means the shop, category, tag, attribute, search pages."
 msgstr ""
 
-#: modules/core/backend/settings-page.php:202
+#: modules/core/backend/settings-page.php:194
 msgid "Display page with message \"not found\" (error 404)"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:203
+#: modules/core/backend/settings-page.php:195
 msgid "Display the normal page with a custom message"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:207
+#: modules/core/backend/settings-page.php:199
 msgid "Message shown when the products list is restricted"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:208
+#: modules/core/backend/settings-page.php:200
 msgid "Default: We don't have products allowed for your country."
 msgstr ""
 
-#: modules/core/backend/settings-page.php:214
+#: modules/core/backend/settings-page.php:206
 msgid "Display Page when a restricted product is viewed"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:215
+#: modules/core/backend/settings-page.php:207
 msgid "You can create a beautiful page with a page builder and show that page for restricted products. Leave it empty to display the message from the previous options"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:223
+#: modules/core/backend/settings-page.php:215
 msgid "Don't apply the location restrictions to these user roles"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:224
+#: modules/core/backend/settings-page.php:216
 msgid "By default, the restrictions dont apply to \"shop managers\" and \"administrator\""
 msgstr ""
 
-#: modules/core/backend/settings-page.php:233
+#: modules/core/backend/settings-page.php:225
 msgid "Checkout: Auto remove restricted products from the cart?"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:234
+#: modules/core/backend/settings-page.php:226
 msgid "Default: We remove the restricted products and show a message indicating that it is not allowed for the country. Enable this option to display the restriction message but keep the product in the cart."
 msgstr ""
 
-#: modules/core/backend/settings-page.php:237
-#: modules/core/backend/settings-page.php:248
+#: modules/core/backend/settings-page.php:229
+#: modules/core/backend/settings-page.php:240
 #: modules/core/backend/settings-page.php:290
 #: modules/core/backend/settings-page.php:318
 #: modules/core/backend/settings-page.php:328
@@ -413,7 +405,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:238
+#: modules/core/backend/settings-page.php:230
 #: modules/core/backend/settings-page.php:290
 #: modules/core/backend/settings-page.php:317
 #: modules/core/backend/settings-page.php:327
@@ -421,16 +413,24 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:243
+#: modules/core/backend/settings-page.php:235
 msgid "Apply country restrictions when order is created manually in the backend?"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:244
+#: modules/core/backend/settings-page.php:236
 msgid "Default: We dont apply restrictions when creating an order in wp-admin > woocommerce > orders"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:247
+#: modules/core/backend/settings-page.php:239
 msgid "no"
+msgstr ""
+
+#: modules/core/backend/settings-page.php:245
+msgid "Sync the country detection with the shipping information?"
+msgstr ""
+
+#: modules/core/backend/settings-page.php:246
+msgid "When we select a country/state in the selector, automatically set it as shipping country/state. When we change shipping country/state, automatically select it on the dropdown selector"
 msgstr ""
 
 #: modules/core/backend/settings-page.php:254
@@ -509,54 +509,62 @@ msgstr ""
 msgid "Default: No. We only apply restrictions for the web pages, the REST API endpoints dont have restrictions."
 msgstr ""
 
+#: modules/core/backend/settings-page.php:333
+msgid "Server key where the IP is saved"
+msgstr ""
+
 #: modules/core/backend/settings-page.php:334
+msgid "Default: We use $_SERVER[REMOTE_ADDR]. But if your site uses a proxy, the real visitor IP might be saved in a different key. Enter the key here."
+msgstr ""
+
+#: modules/core/backend/settings-page.php:341
 msgid "Shortcodes"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:337
+#: modules/core/backend/settings-page.php:344
 msgid "You can use these shortcodes:<br><br>[vcwccr_country_selector]  This displays the flags dropdown selector.<br><hr><br>[wccr_country countries=“US,SV,ES”]This is a great product[/wccr_country]<br><br>You can use this to show content/descriptions for specific countries or show different text in the home page, blog posts, about us, contact us page, etc based on the country of the user. <a href=\"https://wpsuperadmins.com/blog/woocommerce-product-descriptions-per-country-geolocalize-descriptions/?utm_source=wp-admin&utm_campaign=settings-page&utm_medium=country-catalogs-shortcodes\" target=\"_blank\">Tutorial</a>"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:393
+#: modules/core/backend/settings-page.php:400
 msgid "If you have variable products, in this section you can select which product variations can be viewed by some countries/states. This applies to all variable products. For example, show \"color:red\" and \"format:physical\" to the United States only. Another example, show \"size:large\" to all countries except Canada."
 msgstr ""
 
-#: modules/core/backend/settings-page.php:396
-#: modules/core/backend/settings-page.php:448
+#: modules/core/backend/settings-page.php:403
+#: modules/core/backend/settings-page.php:455
 msgid "Rules group"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:398
-#: modules/core/backend/settings-page.php:450
+#: modules/core/backend/settings-page.php:405
+#: modules/core/backend/settings-page.php:457
 msgid "Select country/state"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:409
-#: modules/core/backend/settings-page.php:461
+#: modules/core/backend/settings-page.php:416
+#: modules/core/backend/settings-page.php:468
 msgid "Select all"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:409
-#: modules/core/backend/settings-page.php:461
+#: modules/core/backend/settings-page.php:416
+#: modules/core/backend/settings-page.php:468
 msgid "Select none"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:412
-#: modules/core/backend/settings-page.php:464
+#: modules/core/backend/settings-page.php:419
+#: modules/core/backend/settings-page.php:471
 msgid "Select attributes"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:425
-#: modules/core/backend/settings-page.php:477
+#: modules/core/backend/settings-page.php:432
+#: modules/core/backend/settings-page.php:484
 msgid "Sell product variations in the selected countries/states"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:437
-#: modules/core/backend/settings-page.php:489
+#: modules/core/backend/settings-page.php:444
+#: modules/core/backend/settings-page.php:496
 msgid "Remove"
 msgstr ""
 
-#: modules/core/backend/settings-page.php:493
+#: modules/core/backend/settings-page.php:500
 msgid "Add new"
 msgstr ""
 
@@ -568,16 +576,20 @@ msgstr ""
 msgid "Establishes if the variation is available or not in the selected countries"
 msgstr ""
 
-#: modules/core/frontend/all-users/country-selector.php:45
+#: modules/core/frontend/all-users/country-selector.php:48
 msgid "Select your country"
 msgstr ""
 
+#: modules/core/frontend/all-users/country-selector.php:130
+msgid "Close"
+msgstr ""
+
 #: modules/core/frontend/cache-support.php:82
-#: modules/core/frontend/product-frontend-functions.php:73
+#: modules/core/frontend/product-frontend-functions.php:74
 msgid "This product is not available for your country"
 msgstr ""
 
-#: modules/core/frontend/product-frontend-functions.php:158
+#: modules/core/frontend/product-frontend-functions.php:159
 msgid "We don't have products allowed for your country"
 msgstr ""
 

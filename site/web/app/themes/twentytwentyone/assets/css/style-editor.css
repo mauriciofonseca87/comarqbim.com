@@ -904,6 +904,7 @@ a:hover {
 
 .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
 	color: var(--global--color-background);
+<<<<<<< HEAD
 }
 
 .has-background .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
@@ -918,6 +919,22 @@ a:hover {
 	background-color: var(--global--color-primary);
 }
 
+=======
+}
+
+.has-background .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color) {
+	color: var(--local--color-background, var(--global--color-primary));
+}
+
+.has-background .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-text-color).has-background {
+	color: var(--global--color-primary);
+}
+
+.wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-background) {
+	background-color: var(--global--color-primary);
+}
+
+>>>>>>> 1a8512902478d1f180da0b94acec62f945bfaa21
 .has-background .wp-block-file .wp-block-file__button:not(:hover):not(:active):not(.has-background) {
 	background-color: var(--local--color-primary, var(--global--color-primary));
 }
